@@ -1,16 +1,20 @@
 {% extends "layout.html" %}
 
+{% block title %}
+    Home
+{% endblock %}
+
 {% block main %}
 
-    <form>
+    <form action="/" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="searchTerms">Search Terms</label>
-                <textarea class="form-control" id="searchTerms" rows="1"></textarea>
+                <textarea class="form-control" name="searchTerms" id="searchTerms" rows="1"></textarea>
             </div>
             <div class="form-group col-md-6">
                 <label for="socialMedia">Social Media</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="socialMedia">
                     <option>Reddit</option>
                     <option>Twitter</option>
                     <option>Facebook</option>
@@ -23,7 +27,6 @@
                  <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
-
     </form>
 
 {% endblock %}
