@@ -87,3 +87,4 @@ if __name__ == '__main__':
         # the automatically-detected language.
         print(u"Language of the text: {}".format(response.language))
 
+    sample_analyze_syntax("Great job, everyone!")

@@ -1,3 +1,29 @@
 {% extends "layout.html" %}
 
-<h1>"goodbye world"</h1>
+{% block main %}
+
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="searchTerms">Search Terms</label>
+                <textarea class="form-control" id="searchTerms" rows="1"></textarea>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="socialMedia">Social Media</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Reddit</option>
+                    <option>Twitter</option>
+                    <option>Facebook</option>
+                    <option>Meta</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col text-center">
+                 <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+    </form>
+
+{% endblock %}
