@@ -9,6 +9,8 @@
     <h1>Results</h1>
     <p>You searched for {{ searchterm }}.</p>
 
+    <h3> The overall sentiment is {{ mean }}</h3><br>
+
     {% for sentiment in sentiments %}
         <ul>
             <li>Score: {{ sentiment }} Link: <a href="{{ urls[loop.index - 1] }}"> {{ urls[loop.index - 1] }}</a></li>

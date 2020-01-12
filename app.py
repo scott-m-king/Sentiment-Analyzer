@@ -16,6 +16,20 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 searchterms = []
 
 
+# disable caching
+@app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    r.headers['Cache-Control'] = 'public, max-age=0'
+    return r
+
+
 # Homepage
 @app.route('/', methods=["GET", "POST"])
 def hello_world():
@@ -37,9 +51,10 @@ def results():
     urls = [str(url) for url in urls]
     sentiments = [round(sentiment, 1) for sentiment in sentiments]
 
-    bar_plot_scores(sentiments)
+    mean = round(bar_plot_scores(sentiments), 1)
 
-    return render_template("results.html", searchterm=searchterms[-1], sentiments=sentiments, urls=urls, counter=0)
+    return render_template("results.html", searchterm=searchterms[-1], sentiments=sentiments, urls=urls, counter=0,
+                           mean=mean)
 
 
 if __name__ == '__main__':
