@@ -2,6 +2,8 @@ from flask import Flask, flash, jsonify, redirect, render_template, request
 
 from nlp import analyze_entity_sentiment
 
+import os
+
 app = Flask(__name__)
 
 # Ensure templates are auto-reloaded
@@ -11,18 +13,15 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 searchterms = []
 socialmedias = []
 
-page_data = {'search_terms': [],
-             'social_medias': []}
-
 
 # Homepage
 @app.route('/', methods=["GET", "POST"])
 def hello_world():
     if request.method == "POST":
-        search_term = request.form.get("searchTerms")
-        page_data['search_terms'].append(search_term)
-        social_media = request.form.get("socialMedia")
-        page_data['social_media'].append(social_media)
+        searchterm = request.form.get("searchTerms")
+        socialmedia = request.form.get("socialMedia")
+        searchterms.append(searchterm)
+        socialmedias.append(socialmedia)
         return redirect("/results")
     else:
         return render_template("index.html")
@@ -31,7 +30,7 @@ def hello_world():
 # Results page
 @app.route('/results', methods=["GET", "POST"])
 def results():
-    entity_sentiment = analyze_entity_sentiment(str(page_data['search_terms'][-1]))
+    entity_sentiment = analyze_entity_sentiment(str(searchterms[-1]))
     sentiments = sorted(entity_sentiment.entities[:8], key=lambda s: s.salience, reverse=True)
 
     sentiment_names = [sentiment.name for sentiment in sentiments]
