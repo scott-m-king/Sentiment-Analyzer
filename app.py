@@ -1,6 +1,7 @@
 from flask import Flask, flash, jsonify, redirect, render_template, request
 
 from nlp import analyze_entity_sentiment
+from pipeline import process_search_data
 
 import os
 
