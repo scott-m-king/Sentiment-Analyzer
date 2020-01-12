@@ -18,5 +18,3 @@ if __name__ == '__main__':
     # Detects the sentiment of the text
     sentiment = client.analyze_sentiment(document=document).document_sentiment
 
-    print('Text: {}'.format(text))
-    print('Sentiment: {}, {}'.format(sentiment.score, sentiment.magnitude))
