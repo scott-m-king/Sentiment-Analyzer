@@ -46,7 +46,11 @@ def hello_world():
 @app.route('/results', methods=["GET", "POST"])
 def results():
     entity_sentiment = analyze_entity_sentiment(str(searchterms[-1]))
-    urls, sentiments = process_search_data(searchterms[0])
+    urls_social_media, sentiments_social_media = process_search_data(searchterms[0], source='social_media')
+    urls_news_feed, sentiments_news_feed = process_search_data(searchterms[0], source='news_feed')
+
+    urls = urls_social_media + urls_news_feed
+    sentiments = sentiments_social_media + sentiments_news_feed
 
     urls = [str(url) for url in urls]
     sentiments = [round(sentiment, 1) for sentiment in sentiments]
