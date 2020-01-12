@@ -66,8 +66,7 @@ def results():
                            urls=urls,
                            mean=mean,
                            bar_filename=bar_plot_most_recent_filename(),
-                           pie_filename=pie_plot_most_recent_filename(),
-                           feeling=feeling)
+                           pie_filename=pie_plot_most_recent_filename())
 
 
 if __name__ == '__main__':
