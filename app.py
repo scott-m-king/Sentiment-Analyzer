@@ -11,7 +11,6 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
 searchterms = []
-socialmedias = []
 
 
 # Homepage
@@ -19,9 +18,7 @@ socialmedias = []
 def hello_world():
     if request.method == "POST":
         searchterm = request.form.get("searchTerms")
-        socialmedia = request.form.get("socialMedia")
         searchterms.append(searchterm)
-        socialmedias.append(socialmedia)
         return redirect("/results")
     else:
         return render_template("index.html")
@@ -38,9 +35,9 @@ def results():
     sentiment_scores = [sentiment.sentiment.score for sentiment in sentiments]
     sentiment_magnitude = [sentiment.sentiment.magnitude for sentiment in sentiments]
 
-    return render_template("results.html", searchterm=searchterms[-1], socialmedia=socialmedias[-1],
-                           sentiment_names=sentiment_names, sentiment_saliences=sentiment_saliences,
-                           sentiment_scores=sentiment_scores, sentiment_magnitude=sentiment_magnitude)
+    return render_template("results.html", searchterm=searchterms[-1], sentiment_names=sentiment_names,
+                           sentiment_saliences=sentiment_saliences, sentiment_scores=sentiment_scores,
+                           sentiment_magnitude=sentiment_magnitude)
 
 
 if __name__ == '__main__':

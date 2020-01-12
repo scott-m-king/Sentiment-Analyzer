@@ -4,6 +4,8 @@
     <list default="true" id="aeab04d7-c71c-424b-8bc6-45b139c00b0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/results.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +206,8 @@
       <workItem from="1578788829549" duration="197000" />
       <workItem from="1578789034319" duration="133000" />
       <workItem from="1578790207587" duration="16740000" />
-      <workItem from="1578812735201" duration="1456000" />
+      <workItem from="1578812735201" duration="3019000" />
+      <workItem from="1578816480878" duration="2340000" />
     </task>
     <task id="LOCAL-00001" summary="- created key.json and imported google.cloud nlp toolkit in nlp.py">
       <created>1578796217663</created>
@@ -234,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578806209643</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Starting to populate results page with search data">
+      <created>1578814231526</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578814231526</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +268,8 @@
     <MESSAGE value="- created key.json and imported google.cloud nlp toolkit in nlp.py" />
     <MESSAGE value="- added goodbye world to index.html" />
     <MESSAGE value="- implemented nlp functions in nlp.py, with documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="- implemented nlp functions in nlp.py, with documentation" />
+    <MESSAGE value="Starting to populate results page with search data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting to populate results page with search data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="248" key="#Deployment" timestamp="1578788614664">
@@ -269,35 +280,35 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1578796707582" />
-    <state x="362" y="10" key="CommitChangelistDialog2" timestamp="1578806209371">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="543" y="185" key="CommitChangelistDialog2" timestamp="1578814231000">
+      <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="362" y="10" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1578806209371" />
-    <state x="543" y="185" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1578788616792" />
+    <state x="543" y="185" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1578814231000" />
     <state x="390" y="279" key="Github.CreatePullRequestDialog" timestamp="1578796261387">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="390" y="279" key="Github.CreatePullRequestDialog/0.0.1280.800@0.0.1280.800" timestamp="1578796261387" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1578814171673">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1578819214520">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578810636382" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.23.1920.1120@0.23.1920.1120" timestamp="1578814171673" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1578814171672">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.23.1920.1120@0.23.1920.1120" timestamp="1578819214520" />
+    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1578819214519">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1578810636380" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center/0.23.1920.1120@0.23.1920.1120" timestamp="1578814171672" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1578814171671">
+    <state width="1878" height="310" key="GridCell.Tab.0.center/0.23.1920.1120@0.23.1920.1120" timestamp="1578819214519" />
+    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1578819214518">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1578810636379" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left/0.23.1920.1120@0.23.1920.1120" timestamp="1578814171671" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1578814171672">
+    <state width="1878" height="310" key="GridCell.Tab.0.left/0.23.1920.1120@0.23.1920.1120" timestamp="1578819214518" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1578819214519">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1578810636381" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right/0.23.1920.1120@0.23.1920.1120" timestamp="1578814171672" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right/0.23.1920.1120@0.23.1920.1120" timestamp="1578819214519" />
     <state x="128" y="69" key="MergeDialog" timestamp="1578799643728">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -311,10 +322,11 @@
     </state>
     <state x="283" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1578808160686" />
     <state x="461" y="222" key="SettingsEditor/0.23.1920.1120@0.23.1920.1120" timestamp="1578812754264" />
-    <state x="240" y="128" key="Vcs.Push.Dialog.v2" timestamp="1578806211483">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="360" y="202" key="Vcs.Push.Dialog.v2" timestamp="1578814233159">
+      <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="240" y="128" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1578806211483" />
+    <state x="360" y="202" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1578814233159" />
     <state x="637" y="415" key="com.intellij.ide.util.TipDialog" timestamp="1578787251161">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
@@ -326,7 +338,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/sentiment$sentiment.coverage" NAME="sentiment Coverage Results" MODIFIED="1578787403890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/nwHacks2020$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1578814171664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/nwHacks2020$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1578819015779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/nwHacks2020$nlp.coverage" NAME="nlp Coverage Results" MODIFIED="1578794817346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/nwHacks2020$nlp__1_.coverage" NAME="nlp (1) Coverage Results" MODIFIED="1578810164489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

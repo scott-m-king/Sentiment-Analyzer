@@ -7,24 +7,17 @@
 {% block main %}
 
     <form action="/" method="post">
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="searchTerms">Search Terms</label>
-                <textarea class="form-control" name="searchTerms" id="searchTerms" rows="1"></textarea>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="socialMedia">Social Media</label>
-                <select class="form-control" name="socialMedia" id="socialMedia">
-                    <option>Reddit</option>
-                    <option>Twitter</option>
-                    <option>Facebook</option>
-                    <option>Meta</option>
-                </select>
+        <div class="form-group">
+            <div class="form-row">
+                    <label for="searchTerms">Search Terms</label>
+                    <textarea class="form-control" name="searchTerms" id="searchTerms" rows="3"></textarea>
             </div>
         </div>
-        <div class="form-row">
-            <div class="col text-center">
-                 <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+            <div class="form-row">
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
             </div>
         </div>
     </form>

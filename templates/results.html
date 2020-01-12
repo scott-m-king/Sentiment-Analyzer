@@ -7,25 +7,17 @@
 {% block main %}
 
     <h1>hello world</h1>
-    <p>You searched for {{ searchterm }} in the {{ socialmedia }} platform.</p>
+    <p>You searched for {{ searchterm }}.</p>
 
     {% for sentiment_name in sentiment_names %}
-    <ul>
-        <li>{{ sentiment_name }}</li>
-    </ul>
+        <ul>
+            <li>{{ sentiment_name }}</li>
+        </ul>
     {% endfor %}
 
     {{ sentiment_saliences }}
     {{ sentiment_scores }}
     {{ sentiment_magnitude }}
-
-{#    <h2>Salience (in descending order): </h2>#}
-{#    <ol>#}
-{#     {% for sentiment in sentments %}#}
-{#        <li>{{ sentiment }}</li>#}
-{#     {% endfor %}#}
-{#    </ol>#}
-
 
 
 {% endblock %}
