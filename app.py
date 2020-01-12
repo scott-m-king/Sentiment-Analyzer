@@ -1,7 +1,7 @@
 from flask import Flask, flash, jsonify, redirect, render_template, request
 
 from nlp import analyze_entity_sentiment
-from pipeline import process_search_data, bar_plot_scores
+from pipeline import *
 
 import mpld3
 
@@ -52,9 +52,16 @@ def results():
     sentiments = [round(sentiment, 1) for sentiment in sentiments]
 
     mean = round(bar_plot_scores(sentiments), 1)
+    pie_plot_scores(sentiments)
 
-    return render_template("results.html", searchterm=searchterms[-1], sentiments=sentiments, urls=urls, counter=0,
-                           mean=mean)
+    return render_template("results.html",
+                           searchterm=searchterms[-1],
+                           sentiments=sentiments,
+                           urls=urls,
+                           counter=0,
+                           mean=mean,
+                           bar_filename=bar_plot_most_recent_filename(),
+                           pie_filename=pie_plot_most_recent_filename())
 
 
 if __name__ == '__main__':

@@ -5,6 +5,7 @@ import json
 import matplotlib.pyplot as plt
 import mpld3
 import os
+import time
 
 
 def process_search_data(search_string: str, source='social_media'):
@@ -51,18 +52,48 @@ def bar_plot_scores(scores):
     ax = fig.gca()
     ax.bar(x, y)
     ax.plot(x, [z for _ in x], 'k--')
-    os.remove('static/bar.png')
-    plt.savefig('static/bar.png')
+    filename = 'static/bar_{:d}.png'.format(int(time.time()))
+    plt.savefig(filename)
     return z
 
 
+def bar_plot_most_recent_filename():
+    files = filter(lambda file: 'bar' in file and len(file) == 18, os.listdir('static/'))
+    file = max(files, key=lambda s: s[4:-4])
+    return 'static/' + file
+
+
+def pie_plot_scores(scores, threshold=(-0.4, 0.4)):
+    values = [0, 0, 0]
+    for score in scores:
+        if score < threshold[0]:
+            values[0] += 1
+        elif score < threshold[1]:
+            values[1] += 1
+        else:
+            values[2] += 1
+    fig = plt.figure()
+    ax = fig.gca()
+    plt.pie(values,
+            labels=['negative', 'neutral', 'positive'],
+            colors=['red', 'yellow', 'green'])
+    filename = 'static/pie_{:d}.png'.format(int(time.time()))
+    plt.savefig(filename)
+    return 0
+
+
+def pie_plot_most_recent_filename():
+    files = filter(lambda file: 'pie' in file and len(file) == 18, os.listdir('static/'))
+    file = max(files, key=lambda s: s[4:-4])
+    return 'static/' + file
+
+
+
 if __name__ == '__main__':
-    query = 'UBC'
-    url1, scores1 = process_search_data(query, 'social_media')
-    url2, scores2 = process_search_data(query, 'news_feed')
-    for url, score in zip(url1, scores1):
-        print(url)
-        print('Sentiment: {:.2f}'.format(score))
-        print()
+    pass
+    # query = 'UBC'
+    # url1, scores1 = process_search_data(query, 'social_media')
+    # url2, scores2 = process_search_data(query, 'news_feed')
     # fig = bar_plot_scores(scores1 + scores2)
     # mpld3.show(fig)
+
