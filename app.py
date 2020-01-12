@@ -54,6 +54,8 @@ def results():
     mean = round(bar_plot_scores(sentiments), 1)
     pie_plot_scores(sentiments)
 
+    cleanup_static_folder()
+
     return render_template("results.html",
                            searchterm=searchterms[-1],
                            sentiments=sentiments,

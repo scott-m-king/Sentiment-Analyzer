@@ -88,6 +88,16 @@ def pie_plot_most_recent_filename():
     return 'static/' + file
 
 
+def cleanup_static_folder():
+    all_files = os.listdir('static/')
+    bar_files = sorted((file for file in all_files if file.startswith('bar')), key=lambda s: s[4:-4])
+    pie_files = sorted((file for file in all_files if file.startswith('pie')), key=lambda s: s[4:-4])
+    for file in bar_files[:-3]:
+        os.remove('static/' + file)
+    for file in pie_files[:-3]:
+        os.remove('static/' + file)
+
+
 
 if __name__ == '__main__':
     pass

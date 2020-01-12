@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeab04d7-c71c-424b-8bc6-45b139c00b0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/bar_1578852241.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578852452.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578852475.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578852561.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578852585.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578852649.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578852663.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578853174.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578853235.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578853250.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578853282.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578853235.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578853251.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578853282.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bar.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +218,7 @@
       <workItem from="1578846864486" duration="3629000" />
       <workItem from="1578850597073" duration="528000" />
       <workItem from="1578851173730" duration="1748000" />
-      <workItem from="1578853387758" duration="131000" />
+      <workItem from="1578853387758" duration="489000" />
     </task>
     <task id="LOCAL-00001" summary="- created key.json and imported google.cloud nlp toolkit in nlp.py">
       <created>1578796217663</created>
@@ -291,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578850991399</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- included bar plot and pie plot">
+      <created>1578853619965</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578853619965</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +310,8 @@
     <MESSAGE value="Starting to populate results page with search data" />
     <MESSAGE value="Updated app.py" />
     <MESSAGE value="- included bar plot in html" />
-    <option name="LAST_COMMIT_MESSAGE" value="- included bar plot in html" />
+    <MESSAGE value="- included bar plot and pie plot" />
+    <option name="LAST_COMMIT_MESSAGE" value="- included bar plot and pie plot" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="248" key="#Deployment" timestamp="1578788614664">
@@ -329,34 +322,34 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1578845227208" />
-    <state x="362" y="10" key="CommitChangelistDialog2" timestamp="1578850990863">
+    <state x="362" y="10" key="CommitChangelistDialog2" timestamp="1578853619505">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="362" y="10" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1578850990863" />
+    <state x="362" y="10" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1578853619505" />
     <state x="543" y="185" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1578848926799" />
     <state x="390" y="279" key="Github.CreatePullRequestDialog" timestamp="1578796261387">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="390" y="279" key="Github.CreatePullRequestDialog/0.0.1280.800@0.0.1280.800" timestamp="1578796261387" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1578853043310">
-      <screen x="0" y="23" width="1920" height="1120" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1578853959466">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578851021900" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578853959466" />
     <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.23.1920.1120@0.23.1920.1120" timestamp="1578853043310" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1578853043309">
-      <screen x="0" y="23" width="1920" height="1120" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1578853959465">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1578851021899" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1578853959465" />
     <state width="1878" height="310" key="GridCell.Tab.0.center/0.23.1920.1120@0.23.1920.1120" timestamp="1578853043309" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1578853043309">
-      <screen x="0" y="23" width="1920" height="1120" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1578853959464">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1578851021898" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1578853959464" />
     <state width="1878" height="310" key="GridCell.Tab.0.left/0.23.1920.1120@0.23.1920.1120" timestamp="1578853043309" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1578853043310">
-      <screen x="0" y="23" width="1920" height="1120" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1578853959465">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1578851021900" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1578853959465" />
     <state width="1878" height="310" key="GridCell.Tab.0.right/0.23.1920.1120@0.23.1920.1120" timestamp="1578853043310" />
     <state x="128" y="69" key="MergeDialog" timestamp="1578799643728">
       <screen x="0" y="0" width="1280" height="800" />
@@ -371,10 +364,10 @@
     </state>
     <state x="283" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1578808160686" />
     <state x="461" y="222" key="SettingsEditor/0.23.1920.1120@0.23.1920.1120" timestamp="1578812754264" />
-    <state x="240" y="128" key="Vcs.Push.Dialog.v2" timestamp="1578850992875">
+    <state x="240" y="128" key="Vcs.Push.Dialog.v2" timestamp="1578853622358">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="128" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1578850992875" />
+    <state x="240" y="128" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1578853622358" />
     <state x="360" y="202" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1578848929581" />
     <state x="637" y="415" key="com.intellij.ide.util.TipDialog" timestamp="1578787251161">
       <screen x="0" y="23" width="1920" height="1120" />
@@ -392,7 +385,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nwHacks2020$nlp.coverage" NAME="nlp Coverage Results" MODIFIED="1578794817346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/nwHacks2020$nlp__1_.coverage" NAME="nlp (1) Coverage Results" MODIFIED="1578810164489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nwHacks2020$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1578853524414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/nwHacks2020$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1578853959456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/sentiment$sentiment.coverage" NAME="sentiment Coverage Results" MODIFIED="1578787403890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
