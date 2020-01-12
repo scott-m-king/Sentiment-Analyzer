@@ -1,7 +1,9 @@
 from flask import Flask, flash, jsonify, redirect, render_template, request
 
 from nlp import analyze_entity_sentiment
-from pipeline import process_search_data
+from pipeline import process_search_data, bar_plot_scores
+
+import mpld3
 
 import os
 
@@ -21,6 +23,8 @@ def hello_world():
     if request.method == "POST":
         searchterm = request.form.get("searchTerms")
         socialmedia = request.form.get("socialMedia")
+        searchterms.clear()
+        socialmedias.clear()
         searchterms.append(searchterm)
         socialmedias.append(socialmedia)
         return redirect("/results")
@@ -32,16 +36,15 @@ def hello_world():
 @app.route('/results', methods=["GET", "POST"])
 def results():
     entity_sentiment = analyze_entity_sentiment(str(searchterms[-1]))
-    sentiments = sorted(entity_sentiment.entities[:8], key=lambda s: s.salience, reverse=True)
+    urls, sentiments = process_search_data(searchterms[0])
 
-    sentiment_names = [sentiment.name for sentiment in sentiments]
-    sentiment_saliences = [sentiment.salience for sentiment in sentiments]
-    sentiment_scores = [sentiment.sentiment.score for sentiment in sentiments]
-    sentiment_magnitude = [sentiment.sentiment.magnitude for sentiment in sentiments]
+    urls = [str(url) for url in urls]
+    sentiments = [round(sentiment, 1) for sentiment in sentiments]
 
-    return render_template("results.html", searchterm=searchterms[-1], socialmedia=socialmedias[-1],
-                           sentiment_names=sentiment_names, sentiment_saliences=sentiment_saliences,
-                           sentiment_scores=sentiment_scores, sentiment_magnitude=sentiment_magnitude)
+    # fig = bar_plot_scores(sentiments)
+    # mpld3.show(fig)
+
+    return render_template("results.html", searchterm=searchterms[-1], sentiments=sentiments, urls=urls)
 
 
 if __name__ == '__main__':

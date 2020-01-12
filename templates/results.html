@@ -9,15 +9,19 @@
     <h1>hello world</h1>
     <p>You searched for {{ searchterm }}.</p>
 
-    {% for sentiment_name in sentiment_names %}
+    {% for sentiment in sentiments %}
         <ul>
-            <li>{{ sentiment_name }}</li>
+            <li>{{ sentiment }}</li>
         </ul>
     {% endfor %}
 
-    {{ sentiment_saliences }}
-    {{ sentiment_scores }}
-    {{ sentiment_magnitude }}
+    {% for url in urls %}
+        <ul>
+            <li>
+                {{ url }}
+            </li>
+        </ul>
+    {% endfor %}
 
 
 {% endblock %}
