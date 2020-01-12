@@ -1,8 +1,18 @@
 import socialmediafeed
 import newsfeed
+import nlp
 import json
+import matplotlib.pyplot as plt
+import mpld3
+
 
 def process_search_data(search_string: str, source='social_media'):
+    """
+
+    :param search_string:
+    :param source:
+    :return:
+    """
     # TODO: ask Rick to add parameter to adjust number of items returned by search.
     if source == 'social_media':
         search_data = process_social_media_data(search_string)
@@ -10,7 +20,8 @@ def process_search_data(search_string: str, source='social_media'):
         search_data = process_news_feed_data(search_string)
     else:
         raise NotImplementedError
-    return zip(search_data['url'], search_data['text'])
+    sentiments = (nlp.analyze_sentiment(text) for text in search_data['text'])
+    return search_data['url'], list(sentiment.document_sentiment.score for sentiment in sentiments)
 
 
 def process_social_media_data(search_string):
@@ -31,7 +42,17 @@ def process_news_feed_data(search_string):
     return search_data
 
 
+def bar_plot_scores(scores):
+    y = scores
+    x = list(range(len(y)))
+    fig = plt.bar(x, y)
+
+
 if __name__ == '__main__':
-    query = 'UBC'
-    sd1 = process_search_data(query, 'social_media')
-    sd2 = process_search_data(query, 'news_feed')
+    query = 'nwHacks'
+    url1, scores1 = process_search_data(query, 'social_media')
+    url2, scores2 = process_search_data(query, 'news_feed')
+    for url, score in zip(url1, scores1):
+        print(url)
+        print('Sentiment: {:.2f}'.format(score))
+        print()
