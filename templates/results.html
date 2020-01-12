@@ -6,19 +6,32 @@
 
 {% block main %}
 
-    <h1>Results</h1>
-    <p>You searched for <b>{{ searchterm }}</b>.</p>
+    <div class="white-font">
+        <h1>Results</h1>
+        <p>You searched for <b>{{ searchterm }}</b>.</p>
 
-    <h3> The overall sentiment is {{ mean }}</h3><br>
+        <h3> The overall sentiment is {{ mean }}</h3><br>
 
-    {% for sentiment in sentiments %}
-        <ul>
-            <li>Score: {{ sentiment }} Link: <a href="{{ urls[loop.index - 1] }}"> {{ urls[loop.index - 1] }}</a></li>
-        </ul>
-    {% endfor %}
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h4>Bar Chart</h4>
+                    <img src={{ bar_filename }} width="450">
+                </div>
+                <div class="col-sm">
+                    <h4>Pie Chart</h4>
+                    <img src={{ pie_filename }} width="450">
+                </div>
+            </div>
+        </div><br>
 
+        <h3>Sources</h3>
 
-    <img src= {{ bar_filename }}>
-    <img src= {{ pie_filename }}>
-
+        {% for sentiment in sentiments %}
+            <ul>
+                <li>Score: {{ sentiment }} Link: <a href="{{ urls[loop.index - 1] }}"> {{ urls[loop.index - 1] }}</a>
+                </li>
+            </ul>
+        {% endfor %}
+    </div>
 {% endblock %}

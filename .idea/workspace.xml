@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeab04d7-c71c-424b-8bc6-45b139c00b0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/bar_1578854275.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578854290.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578854312.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578854275.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578854290.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578854312.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bar_1578856630.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bar_1578856703.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bar_1578856716.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pie_1578856631.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pie_1578856704.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/pie_1578856716.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bar_1578853585.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bar_1578853911.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bar_1578853968.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/pie_1578853585.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/pie_1578853911.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/pie_1578853968.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bar_1578854290.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bar_1578854312.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bar_1578854508.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pie_1578854290.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pie_1578854312.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pie_1578854508.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/results.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/../nwHacks2020-master/" />
       <recent name="$PROJECT_DIR$/../" />
       <recent name="$PROJECT_DIR$/../nwHacks2020-master/sentiment" />
@@ -159,7 +162,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -233,7 +236,7 @@
       <workItem from="1578850597073" duration="528000" />
       <workItem from="1578851173730" duration="1748000" />
       <workItem from="1578853387758" duration="489000" />
-      <workItem from="1578854069798" duration="464000" />
+      <workItem from="1578854069798" duration="2628000" />
     </task>
     <task id="LOCAL-00001" summary="- created key.json and imported google.cloud nlp toolkit in nlp.py">
       <created>1578796217663</created>
@@ -298,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578853619965</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- modified app.py to include both social media and news sources">
+      <created>1578854556168</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578854556168</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +336,8 @@
     <MESSAGE value="Updated app.py" />
     <MESSAGE value="- included bar plot in html" />
     <MESSAGE value="- included bar plot and pie plot" />
-    <option name="LAST_COMMIT_MESSAGE" value="- included bar plot and pie plot" />
+    <MESSAGE value="- modified app.py to include both social media and news sources" />
+    <option name="LAST_COMMIT_MESSAGE" value="- modified app.py to include both social media and news sources" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="248" key="#Deployment" timestamp="1578788614664">
@@ -337,35 +348,35 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1578845227208" />
-    <state x="362" y="10" key="CommitChangelistDialog2" timestamp="1578853619505">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="543" y="185" key="CommitChangelistDialog2" timestamp="1578854555941">
+      <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="362" y="10" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1578853619505" />
-    <state x="543" y="185" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1578848926799" />
+    <state x="543" y="185" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1578854555941" />
     <state x="390" y="279" key="Github.CreatePullRequestDialog" timestamp="1578796261387">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="390" y="279" key="Github.CreatePullRequestDialog/0.0.1280.800@0.0.1280.800" timestamp="1578796261387" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1578854466071">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1578856360366">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1578853959466" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.23.1920.1120@0.23.1920.1120" timestamp="1578854466071" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1578854466071">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.23.1920.1120@0.23.1920.1120" timestamp="1578856360366" />
+    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1578856360365">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1578853959465" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center/0.23.1920.1120@0.23.1920.1120" timestamp="1578854466071" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1578854466070">
+    <state width="1878" height="310" key="GridCell.Tab.0.center/0.23.1920.1120@0.23.1920.1120" timestamp="1578856360365" />
+    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1578856360364">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1578853959464" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left/0.23.1920.1120@0.23.1920.1120" timestamp="1578854466070" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1578854466071">
+    <state width="1878" height="310" key="GridCell.Tab.0.left/0.23.1920.1120@0.23.1920.1120" timestamp="1578856360364" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1578856360365">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1578853959465" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right/0.23.1920.1120@0.23.1920.1120" timestamp="1578854466071" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right/0.23.1920.1120@0.23.1920.1120" timestamp="1578856360365" />
     <state x="128" y="69" key="MergeDialog" timestamp="1578799643728">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -379,11 +390,11 @@
     </state>
     <state x="283" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1578808160686" />
     <state x="461" y="222" key="SettingsEditor/0.23.1920.1120@0.23.1920.1120" timestamp="1578812754264" />
-    <state x="240" y="128" key="Vcs.Push.Dialog.v2" timestamp="1578853622358">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="360" y="202" key="Vcs.Push.Dialog.v2" timestamp="1578854558314">
+      <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="240" y="128" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1578853622358" />
-    <state x="360" y="202" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1578848929581" />
+    <state x="360" y="202" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1578854558314" />
     <state x="637" y="415" key="com.intellij.ide.util.TipDialog" timestamp="1578787251161">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
@@ -399,7 +410,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/sentiment$sentiment.coverage" NAME="sentiment Coverage Results" MODIFIED="1578787403890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/nwHacks2020$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1578854466060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/nwHacks2020$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1578856360358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nwHacks2020$nlp.coverage" NAME="nlp Coverage Results" MODIFIED="1578794817346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/nwHacks2020$nlp__1_.coverage" NAME="nlp (1) Coverage Results" MODIFIED="1578810164489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
