@@ -47,7 +47,10 @@ def process_news_feed_data(search_string):
 def bar_plot_scores(scores):
     y = scores
     x = list(range(len(y)))
-    z = sum(y)/len(y)
+    try:
+        z = sum(y)/len(y)
+    except ZeroDivisionError:
+        z = 0
     fig = plt.figure()
     ax = fig.gca()
     ax.bar(x, y)
