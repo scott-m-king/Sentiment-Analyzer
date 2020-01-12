@@ -4,6 +4,7 @@ import nlp
 import json
 import matplotlib.pyplot as plt
 import mpld3
+import os
 
 
 def process_search_data(search_string: str, source='social_media'):
@@ -50,7 +51,9 @@ def bar_plot_scores(scores):
     ax = fig.gca()
     ax.bar(x, y)
     ax.plot(x, [z for _ in x], 'k--')
+    os.remove('static/bar.png')
     plt.savefig('static/bar.png')
+    return z
 
 
 if __name__ == '__main__':
