@@ -37,8 +37,7 @@ def results():
     urls = [str(url) for url in urls]
     sentiments = [round(sentiment, 1) for sentiment in sentiments]
 
-    # fig = bar_plot_scores(sentiments)
-    # mpld3.show(fig)
+    bar_plot_scores(sentiments)
 
     return render_template("results.html", searchterm=searchterms[-1], sentiments=sentiments, urls=urls, counter=0)
 

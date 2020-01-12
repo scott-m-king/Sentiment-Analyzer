@@ -45,10 +45,12 @@ def process_news_feed_data(search_string):
 def bar_plot_scores(scores):
     y = scores
     x = list(range(len(y)))
+    z = sum(y)/len(y)
     fig = plt.figure()
     ax = fig.gca()
     ax.bar(x, y)
-    return fig
+    ax.plot(x, [z for _ in x], 'k--')
+    plt.savefig('static/bar.png')
 
 
 if __name__ == '__main__':
@@ -59,4 +61,5 @@ if __name__ == '__main__':
         print(url)
         print('Sentiment: {:.2f}'.format(score))
         print()
-    bar_plot_scores(scores1 + scores2)
+    # fig = bar_plot_scores(scores1 + scores2)
+    # mpld3.show(fig)
