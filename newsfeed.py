@@ -11,11 +11,11 @@ def search(query):
     response = requests.request("GET", url, headers=headers, params=querystring)
     return response.text
 
+if __name__ == '__main__':
+    data = json.loads(search('UBC'))
 
-data = json.loads(search('UBC'))
+    for i in data['value']:
 
-for i in data['value']:
-
-    print(i['title'])
-    # print(i['description'])
-    # print(i['url'])
+        print(i['title'])
+        # print(i['description'])
+        # print(i['url'])
