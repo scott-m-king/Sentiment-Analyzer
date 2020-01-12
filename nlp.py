@@ -2,6 +2,7 @@
 from google.cloud import language
 from google.cloud.language import enums
 
+client = language.LanguageServiceClient.from_service_account_json('key.json')
 
 def analyze_sentiment(text: str):
     """
@@ -138,3 +139,5 @@ if __name__ == '__main__':
     entity_sentiment = analyze_entity_sentiment(test_text)
     syntax = __analyze(test_text, 'syntax')
     classification = __analyze(test_text, 'classification')
+
+    print(sentiment)
