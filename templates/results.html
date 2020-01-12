@@ -33,7 +33,7 @@
 
         {% for sentiment in sentiments %}
             <ul>
-                <li>Score: {{ sentiment }} Link: <a href="{{ urls[loop.index - 1] }}"> {{ urls[loop.index - 1] }}</a>
+                <li>Score: {{ sentiment }} Link: <a href="{{ urls[loop.index - 1] }}" target="_blank"> {{ urls[loop.index - 1] }}</a>
                 </li>
             </ul>
         {% endfor %}
