@@ -68,7 +68,7 @@
       <recent name="$PROJECT_DIR$/../nwHacks2020-master/sentiment" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.socialmediafeed">
+  <component name="RunManager" selected="Python.pipeline">
     <configuration name="newsfeed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sentiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,9 +139,6 @@
       <module name="sentiment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -210,19 +207,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Flask server.sentiment" />
+      <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="Python.newsfeed" />
       <item itemvalue="Python.nlp (1)" />
       <item itemvalue="Python.nlp" />
       <item itemvalue="Python.pipeline" />
       <item itemvalue="Python.socialmediafeed" />
-      <item itemvalue="Flask server.Flask (app.py)" />
-      <item itemvalue="Flask server.sentiment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pipeline" />
         <item itemvalue="Python.socialmediafeed" />
         <item itemvalue="Python.newsfeed" />
-        <item itemvalue="Python.pipeline" />
         <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.nlp (1)" />
       </list>
@@ -393,9 +390,9 @@
     <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1578809915186" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sentiment$sentiment.coverage" NAME="sentiment Coverage Results" MODIFIED="1578787403890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/nwHacks2020$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1578844700817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/nwHacks2020$nlp.coverage" NAME="nlp Coverage Results" MODIFIED="1578794817346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/nwHacks2020$nlp__1_.coverage" NAME="nlp (1) Coverage Results" MODIFIED="1578810164489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nwHacks2020$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1578844700817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/sentiment$sentiment.coverage" NAME="sentiment Coverage Results" MODIFIED="1578787403890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

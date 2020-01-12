@@ -45,14 +45,18 @@ def process_news_feed_data(search_string):
 def bar_plot_scores(scores):
     y = scores
     x = list(range(len(y)))
-    fig = plt.bar(x, y)
+    fig = plt.figure()
+    ax = fig.gca()
+    ax.bar(x, y)
+    return fig
 
 
 if __name__ == '__main__':
-    query = 'nwHacks'
+    query = 'UBC'
     url1, scores1 = process_search_data(query, 'social_media')
     url2, scores2 = process_search_data(query, 'news_feed')
     for url, score in zip(url1, scores1):
         print(url)
         print('Sentiment: {:.2f}'.format(score))
         print()
+    bar_plot_scores(scores1 + scores2)
