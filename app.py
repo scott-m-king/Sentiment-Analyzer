@@ -64,10 +64,10 @@ def results():
                            searchterm=searchterms[-1],
                            sentiments=sentiments,
                            urls=urls,
-                           counter=0,
                            mean=mean,
                            bar_filename=bar_plot_most_recent_filename(),
-                           pie_filename=pie_plot_most_recent_filename())
+                           pie_filename=pie_plot_most_recent_filename(),
+                           feeling=feeling)
 
 
 if __name__ == '__main__':

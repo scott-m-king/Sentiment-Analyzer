@@ -8,9 +8,13 @@
 
     <div class="white-font">
         <h1>Results</h1>
-        <p>You searched for <b>{{ searchterm }}</b>.</p>
 
-        <h3> The overall sentiment is {{ mean }}</h3><br>
+        <h3> The overall sentiment is {{ mean }} for search term '{{ searchterm }}'</h3>
+    <ul>
+        <li>Negative Sentiment: -1.0 to -0.4</li>
+        <li>Neutral Sentiment: -0.3 to 0.3</li>
+        <li>Positive Sentiment: 0.4 to 1.0</li>
+    </ul>
 
         <div class="container">
             <div class="row">

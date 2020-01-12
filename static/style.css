@@ -5,8 +5,20 @@ html * {
 body {
     background-image: url(background.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .white-font {
     color: white;
+}
+
+#title_1 {
+    text-align: center;
+    width: 100%;
+    font-size: 200%;
+}
+
+#search-box {
+    height: 100%;
+    padding-top: 75px;
 }
