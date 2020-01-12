@@ -4,7 +4,6 @@
     <list default="true" id="aeab04d7-c71c-424b-8bc6-45b139c00b0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/results.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,7 +258,7 @@
       <workItem from="1578812735201" duration="3019000" />
       <workItem from="1578816480878" duration="2340000" />
       <workItem from="1578819658510" duration="1876000" />
-      <workItem from="1578846864486" duration="2031000" />
+      <workItem from="1578846864486" duration="3629000" />
     </task>
     <task id="LOCAL-00001" summary="- created key.json and imported google.cloud nlp toolkit in nlp.py">
       <created>1578796217663</created>
@@ -303,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578819666921</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated app.py">
+      <created>1578848927018</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578848927018</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +334,8 @@
     <MESSAGE value="- added goodbye world to index.html" />
     <MESSAGE value="- implemented nlp functions in nlp.py, with documentation" />
     <MESSAGE value="Starting to populate results page with search data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting to populate results page with search data" />
+    <MESSAGE value="Updated app.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated app.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="248" key="#Deployment" timestamp="1578788614664">
@@ -339,11 +346,11 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1578845227208" />
-    <state x="362" y="10" key="CommitChangelistDialog2" timestamp="1578819666244">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="543" y="185" key="CommitChangelistDialog2" timestamp="1578848926799">
+      <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="362" y="10" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1578819666244" />
-    <state x="543" y="185" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1578814231000" />
+    <state x="543" y="185" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1578848926799" />
     <state x="390" y="279" key="Github.CreatePullRequestDialog" timestamp="1578796261387">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -381,11 +388,11 @@
     </state>
     <state x="283" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1578808160686" />
     <state x="461" y="222" key="SettingsEditor/0.23.1920.1120@0.23.1920.1120" timestamp="1578812754264" />
-    <state x="240" y="128" key="Vcs.Push.Dialog.v2" timestamp="1578819669116">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="360" y="202" key="Vcs.Push.Dialog.v2" timestamp="1578848929581">
+      <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="240" y="128" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1578819669116" />
-    <state x="360" y="202" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1578814233159" />
+    <state x="360" y="202" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1578848929581" />
     <state x="637" y="415" key="com.intellij.ide.util.TipDialog" timestamp="1578787251161">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
@@ -394,6 +401,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1578809915186" />
+    <state x="625" y="274" width="670" height="676" key="search.everywhere.popup" timestamp="1578849717973">
+      <screen x="0" y="23" width="1920" height="1120" />
+    </state>
+    <state x="625" y="274" width="670" height="676" key="search.everywhere.popup/0.23.1920.1120@0.23.1920.1120" timestamp="1578849717973" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/sentiment$sentiment.coverage" NAME="sentiment Coverage Results" MODIFIED="1578787403890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

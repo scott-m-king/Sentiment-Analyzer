@@ -14,7 +14,6 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
 searchterms = []
-socialmedias = []
 
 
 # Homepage
@@ -22,11 +21,8 @@ socialmedias = []
 def hello_world():
     if request.method == "POST":
         searchterm = request.form.get("searchTerms")
-        socialmedia = request.form.get("socialMedia")
         searchterms.clear()
-        socialmedias.clear()
         searchterms.append(searchterm)
-        socialmedias.append(socialmedia)
         return redirect("/results")
     else:
         return render_template("index.html")
@@ -44,7 +40,7 @@ def results():
     # fig = bar_plot_scores(sentiments)
     # mpld3.show(fig)
 
-    return render_template("results.html", searchterm=searchterms[-1], sentiments=sentiments, urls=urls)
+    return render_template("results.html", searchterm=searchterms[-1], sentiments=sentiments, urls=urls, counter=0)
 
 
 if __name__ == '__main__':
