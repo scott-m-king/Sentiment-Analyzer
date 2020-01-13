@@ -15,7 +15,6 @@ def process_search_data(search_string: str, source='social_media'):
     :param source:
     :return:
     """
-    # TODO: ask Rick to add parameter to adjust number of items returned by search.
     if source == 'social_media':
         search_data = process_social_media_data(search_string)
     elif source == 'news_feed':
