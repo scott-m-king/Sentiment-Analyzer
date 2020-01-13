@@ -35,6 +35,7 @@ def add_header(r):
 def hello_world():
     if request.method == "POST":
         searchterm = request.form.get("searchTerms")
+        searchterm = searchterm.replace(' ', '-')
         searchterms.clear()
         searchterms.append(searchterm)
         return redirect("/results")
