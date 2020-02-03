@@ -10,11 +10,11 @@
         <h1>Results</h1>
 
         <h3> The overall sentiment is {{ mean }} for search term '{{ searchterm }}'</h3>
-    <ul>
-        <li>Negative Sentiment: -1.0 to -0.4</li>
-        <li>Neutral Sentiment: -0.3 to 0.3</li>
-        <li>Positive Sentiment: 0.4 to 1.0</li>
-    </ul>
+        <ul>
+            <li>Negative Sentiment: -1.0 to -0.4</li>
+            <li>Neutral Sentiment: -0.3 to 0.3</li>
+            <li>Positive Sentiment: 0.4 to 1.0</li>
+        </ul>
 
         <div class="container">
             <div class="row">
@@ -27,13 +27,15 @@
                     <img src={{ pie_filename }} width="450">
                 </div>
             </div>
-        </div><br>
+        </div>
+        <br>
 
         <h3>Sources</h3>
 
         {% for sentiment in sentiments %}
             <ul>
-                <li>Score: {{ sentiment }} Link: <a href="{{ urls[loop.index - 1] }}" target="_blank"> {{ urls[loop.index - 1] }}</a>
+                <li>Score: {{ sentiment }} Link: <a href="{{ urls[loop.index - 1] }}"
+                                                    target="_blank"> {{ urls[loop.index - 1] }}</a>
                 </li>
             </ul>
         {% endfor %}

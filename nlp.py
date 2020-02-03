@@ -3,7 +3,7 @@ from google.cloud import language
 from google.cloud.language import enums
 import os
 
-client = language.LanguageServiceClient.from_service_account_json('key.json')
+client = language.LanguageServiceClient.from_service_account_json('key2.json')
 
 def analyze_sentiment(text: str):
     """
@@ -111,7 +111,7 @@ def classify_text(text: str):
 
 
 def __analyze(text: str, analysis_level: str):
-    client = language.LanguageServiceClient.from_service_account_json('key.json')
+    client = language.LanguageServiceClient.from_service_account_json('key2.json')
     document = {"content": text, "type": enums.Document.Type.PLAIN_TEXT, "language": 'en'}
     analyses = {'sentiment': client.analyze_sentiment,
                 'entities': client.analyze_entities,
