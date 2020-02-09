@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeab04d7-c71c-424b-8bc6-45b139c00b0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/bar_1578875530.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578878506.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bar_1578878562.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578875530.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578878506.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pie_1578878562.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/key.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsfeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/newsfeed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bar_1578862075.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bar_1578862144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bar_1578862180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/pie_1578862075.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/pie_1578862144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/pie_1578862180.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/results.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/../nwHacks2020-master/" />
       <recent name="$PROJECT_DIR$/../" />
@@ -254,7 +239,11 @@
       <workItem from="1580611207868" duration="519000" />
       <workItem from="1580618401312" duration="75000" />
       <workItem from="1580687827295" duration="9000" />
-      <workItem from="1580689809591" duration="199000" />
+      <workItem from="1580689809591" duration="825000" />
+      <workItem from="1580692410672" duration="160000" />
+      <workItem from="1580694942786" duration="16000" />
+      <workItem from="1581053306797" duration="1425000" />
+      <workItem from="1581275199035" duration="528000" />
     </task>
     <task id="LOCAL-00001" summary="- created key.json and imported google.cloud nlp toolkit in nlp.py">
       <created>1578796217663</created>
@@ -361,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578862209081</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Fixed API communication issue">
+      <created>1580690422318</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1580690422318</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +391,8 @@
     <MESSAGE value="Fixed bug with /results render_template" />
     <MESSAGE value="Links now open in new tabs" />
     <MESSAGE value="fixed issue that caused server to crash if no results" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed issue that caused server to crash if no results" />
+    <MESSAGE value="Fixed API communication issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed API communication issue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="248" key="#Deployment" timestamp="1578788614664">
@@ -410,11 +407,13 @@
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="698" y="337" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.-973.1440.2537/0.23.1920.1120@0.23.1920.1120" timestamp="1580690213505" />
-    <state x="944" y="177" key="CommitChangelistDialog2" timestamp="1578862208779">
-      <screen x="0" y="23" width="1920" height="1120" />
+    <state x="2153" y="-538" key="CommitChangelistDialog2" timestamp="1581275952739">
+      <screen x="1920" y="-973" width="1440" height="2537" />
     </state>
     <state x="362" y="10" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1578853619505" />
     <state x="944" y="177" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1578862208779" />
+    <state x="944" y="177" key="CommitChangelistDialog2/1920.-973.1440.2537/0.23.1920.1120@0.23.1920.1120" timestamp="1580690421984" />
+    <state x="2153" y="-538" key="CommitChangelistDialog2/1920.-973.1440.2537/0.23.1920.1120@1920.-973.1440.2537" timestamp="1581275952739" />
     <state x="390" y="279" key="Github.CreatePullRequestDialog" timestamp="1578796261387">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -456,19 +455,21 @@
     </state>
     <state x="283" y="23" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1578808160686" />
     <state x="461" y="222" key="SettingsEditor/0.23.1920.1120@0.23.1920.1120" timestamp="1578860515776" />
-    <state x="360" y="202" key="Vcs.Push.Dialog.v2" timestamp="1578862210607">
+    <state x="360" y="202" key="Vcs.Push.Dialog.v2" timestamp="1580690427881">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="240" y="128" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1578853622358" />
     <state x="360" y="202" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1578862210607" />
+    <state x="360" y="202" key="Vcs.Push.Dialog.v2/1920.-973.1440.2537/0.23.1920.1120@0.23.1920.1120" timestamp="1580690427881" />
     <state x="637" y="415" key="com.intellij.ide.util.TipDialog" timestamp="1578787251161">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="637" y="415" key="com.intellij.ide.util.TipDialog/0.23.1920.1120@0.23.1920.1120" timestamp="1578787251161" />
-    <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578809915186">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="635" y="477" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581275226304">
+      <screen x="0" y="23" width="1920" height="1120" />
     </state>
     <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1578809915186" />
+    <state x="635" y="477" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-973.1440.2537/0.23.1920.1120@0.23.1920.1120" timestamp="1581275226304" />
     <state x="625" y="274" width="670" height="676" key="search.everywhere.popup" timestamp="1578849717973">
       <screen x="0" y="23" width="1920" height="1120" />
     </state>

@@ -34,10 +34,10 @@
     <script>
         $(function () {
             $('#searchTerms').on('keypress', function (e) {
-                if (e.which == 32) {
+                if (e.which === 32) {
                     return false;
                 }
-                if (e.which == 13) {
+                if (e.which === 13) {
                     $('form').submit();
                     return false;
                 }
